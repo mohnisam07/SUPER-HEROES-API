@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: yellow;
+}
+
+.box {
+    flex: 1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-image-random{
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+#hero-name-random{
+    margin-left: 300px;
+    padding-top: 30px;
+}
+
+#hero-powerstats-random{
+    margin-left: 330px;
+}
+
+#birth-place-random{
+    margin-left: 330px;
+}
+
+#random-hero {
+    background-color: #f93a13;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  
+  #random-hero:hover {
+    background-color: #ff7426;
+  }
+  
+  #random-hero:active {
+    transform: scale(0.95);
+  }
+
+  div.center-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}  
+    
+
+
+
+

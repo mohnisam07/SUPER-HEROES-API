@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Heroes API</title>
+    <link rel="stylesheet" href="random-hero.css">
+    <link rel="stylesheet" href="search-hero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+
+    <div class="box random-hero">
+        <h1 id="hero-name-random"></h1>
+        <img src="./pictures/random-super-heroes.jpeg" id="hero-image-random" alt="">
+        <br>
+        <h3 class="random-h3" id="hero-powerstats-random"></h3>
+        <h3 class="random-h3" id="birth-place-random"></h3>
+        <button id="random-hero">Click for a Random Hero</button> 
+    </div>
+
+    <div class="center-line"></div>
+
+    <div class="box search-hero">
+        <h1 id="hero-name-search"></h1>
+        <img src="./pictures/search-super-hero.jpeg" id="hero-image-search" alt="">
+        <div class="input-search">
+        <br>
+        <h3 id="hero-powerstats-search"></h3>
+        <h3 id="birth-place-search"></h3>
+        <input id="search-input" type="text" placeholder="Search Your Favourite Hero"> <button id="search-hero">Search</button>
+       </div>
+
+    </div>
+    
+    
+
+  
+
+    <script src="randomHero.js"></script>
+    <script src="searchHero.js"></script>
+</body>
+</html>
