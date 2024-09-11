@@ -1,64 +1,91 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body, html {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: black;
-    color: yellow;
-}
+/* Search Hero Section Styles */
 
-.box {
-    flex: 1;
-    height: 100vh;
+/* Container for the Search Hero */
+.search-hero {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
 }
 
-#hero-image-search{
-    width: 400px;
-    height: 400px;
-    margin-left: 200px;
+/* Styling for the hero image in the search section */
+#hero-image-search {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin-top: 30px;
 }
 
-h1{
-    margin-left: 300px;
-    padding-top: 30px;
+#hero-name-search, #hero-powerstats-search, #birth-place-search {
+    font-size: 2rem; /* Desktop-friendly font size */
+    margin: 10px 0;
 }
 
-.input-search{
-    padding-left: 250px;
-    padding-top: 10px;
+/* Input and Button styles for Search Hero */
+.input-search {
+    margin-top: 20px;
 }
 
-input{
+input {
     padding: 10px 23px;
     border-radius: 15px;
     text-align: center;
-
+    margin-right: 10px;
 }
 
-#search-hero{
+#search-hero {
     background-color: #f93a13;
     color: #fff;
     border: none;
-    padding: 8px 15px; 
-    font-size: 15px;
+    padding: 12px 25px;
+    font-size: 1rem;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 10px;
     transition: all 0.2s ease-in-out;
 }
 
 #search-hero:hover {
     background-color: #ff7426;
-  }
+}
 
 #search-hero:active {
     transform: scale(0.95);
-  }
+}
 
+/* Responsive adjustments for mobile and tablet */
+@media (max-width: 768px) {
+    /* Adjust font and image sizes for smaller screens */
+    #hero-name-search, #hero-powerstats-search, #birth-place-search {
+        font-size: 1.5rem;
+    }
+
+    #hero-image-search {
+        max-width: 90%;
+    }
+
+    input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero-name-search {
+        font-size: 1.2rem;
+    }
+
+    #hero-image-search {
+        max-width: 80%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    #search-hero {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

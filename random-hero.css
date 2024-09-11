@@ -1,77 +1,96 @@
+/* Random Hero Section Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body, html {
     height: 100%;
     width: 100%;
-    display: flex;
     background-color: black;
     color: yellow;
-}
-
-.box {
-    flex: 1;
-    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#hero-image-random{
-    width: 400px;
-    height: 400px;
-    margin-left: 200px;
+/* Container for the Random Hero */
+.random-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the hero image in the random section */
+#hero-image-random {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin-top: 30px;
 }
 
-#hero-name-random{
-    margin-left: 300px;
-    padding-top: 30px;
+#hero-name-random, #hero-powerstats-random, #birth-place-random {
+    font-size: 2rem; /* Desktop-friendly font size */
+    margin: 10px 0;
 }
 
-#hero-powerstats-random{
-    margin-left: 330px;
-}
-
-#birth-place-random{
-    margin-left: 330px;
-}
-
+/* Button styles for Random Hero */
 #random-hero {
     background-color: #f93a13;
     color: #fff;
     border: none;
-    padding: 10px 20px; 
-    font-size: 15px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     border-radius: 15px;
     cursor: pointer;
-    margin-left: 300px;
-    margin-top: 10px;
+    margin-top: 20px;
     transition: all 0.2s ease-in-out;
-  }
-  
-  
-  
-  #random-hero:hover {
+}
+
+#random-hero:hover {
     background-color: #ff7426;
-  }
-  
-  #random-hero:active {
+}
+
+#random-hero:active {
     transform: scale(0.95);
-  }
+}
 
-  div.center-line {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 2px;
-    background-color: white;
-}  
-    
+/* Responsive adjustments for mobile and tablet */
+@media (max-width: 768px) {
+    /* Adjust font and image sizes for smaller screens */
+    #hero-name-random, #hero-powerstats-random, #birth-place-random {
+        font-size: 1.5rem;
+    }
 
+    #hero-image-random {
+        max-width: 90%;
+    }
 
+    #random-hero {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
 
+@media (max-width: 480px) {
+    #hero-name-random {
+        font-size: 1.2rem;
+    }
+
+    #hero-image-random {
+        max-width: 80%;
+    }
+
+    #random-hero {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
 
